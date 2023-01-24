@@ -1,0 +1,42 @@
+/*Write a program that reads the contents of a file containing Student objects 
+and prints them to the console. 
+The program should open the file, read the Student objects one at a time, 
+and print their name, age, and grade to the console.*/
+
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+class Student{
+    public:
+    int op(){
+    fstream file;
+    
+
+    string s;
+    file.open("STu",ios::in);
+    getline(file, s);
+        cout<<s;
+        cout<<"\n"; 
+    getline(file, s);
+        cout<<s;
+        cout<<"\n"; 
+    getline(file, s);
+        cout<<s;
+        cout<<"\n"; 
+         
+    
+
+    return 0;
+    }
+
+};
+
+int main(){
+        
+    Student s;
+    s.op();
+    
+
+}
